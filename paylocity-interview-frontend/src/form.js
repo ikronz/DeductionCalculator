@@ -64,11 +64,12 @@ class DeductionForm extends React.Component {
                         <br></br>
                         <input name="name" type="text" value={this.state.name} onChange={this.handleChange} />
                         <br></br>
-                        <label>Dependents</label>
+                        <label>Dependent</label>
                         <br></br>
                         <input name="dependent" type="text" value={this.state.dependent} onChange={this.handleChange} />
                         <button type="button" onClick={this.handleArrayChange}>Add dependent</button>
                         <br></br>
+                        { this.state.dependentsArr.map(d => <p style={{ fontSize: 13 }}>{d}</p>) }
                         <input type="submit" value="Submit for Deduction" />
                     </form>
                     <div>
