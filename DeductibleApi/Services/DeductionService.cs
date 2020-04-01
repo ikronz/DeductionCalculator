@@ -57,7 +57,7 @@ namespace DeductibleApi.Logic
 		public static bool WhoDiscount(string name, char letter = 'A')
 		{
 			char letterLower = Char.ToLower(letter);
-			if (name[0] == letterLower)
+			if (name[0] == letterLower || name[0] == letter)
 			{
 				return true;
 			}
